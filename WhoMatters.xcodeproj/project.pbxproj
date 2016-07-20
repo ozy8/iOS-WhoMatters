@@ -8,20 +8,80 @@
 
 /* Begin PBXBuildFile section */
 		F11B91E01D3E150100B8F78F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11B91DF1D3E150100B8F78F /* AppDelegate.swift */; };
-		F11B91E21D3E150100B8F78F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11B91E11D3E150100B8F78F /* ViewController.swift */; };
 		F11B91E51D3E150100B8F78F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F11B91E31D3E150100B8F78F /* Main.storyboard */; };
 		F11B91E71D3E150100B8F78F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F11B91E61D3E150100B8F78F /* Assets.xcassets */; };
 		F11B91EA1D3E150100B8F78F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F11B91E81D3E150100B8F78F /* LaunchScreen.storyboard */; };
+		F11B91F21D3E15FB00B8F78F /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11B91F11D3E15FB00B8F78F /* LogInViewController.swift */; };
+		F11B91F41D3E1B6E00B8F78F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11B91F31D3E1B6E00B8F78F /* SignUpViewController.swift */; };
+		F11B91F61D3E1CB800B8F78F /* RoomCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11B91F51D3E1CB800B8F78F /* RoomCollectionViewController.swift */; };
+		F11B91F81D3E1D0600B8F78F /* CreateRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11B91F71D3E1D0600B8F78F /* CreateRoomViewController.swift */; };
+		F11B91FA1D3E1D5800B8F78F /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11B91F91D3E1D5800B8F78F /* ProfileTableViewController.swift */; };
+		F11B921B1D3E25B500B8F78F /* chatBubbler.png in Resources */ = {isa = PBXBuildFile; fileRef = F11B91FD1D3E25B400B8F78F /* chatBubbler.png */; };
+		F11B921C1D3E25B500B8F78F /* chatBubbler@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F11B91FE1D3E25B400B8F78F /* chatBubbler@2x.png */; };
+		F11B921D1D3E25B500B8F78F /* chatBubbler@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F11B91FF1D3E25B400B8F78F /* chatBubbler@3x.png */; };
+		F11B921E1D3E25B500B8F78F /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = F11B92001D3E25B400B8F78F /* Contents.json */; };
+		F11B921F1D3E25B500B8F78F /* chatBubblerOut.png in Resources */ = {isa = PBXBuildFile; fileRef = F11B92021D3E25B400B8F78F /* chatBubblerOut.png */; };
+		F11B92201D3E25B500B8F78F /* chatBubblerOut@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F11B92031D3E25B400B8F78F /* chatBubblerOut@2x.png */; };
+		F11B92211D3E25B500B8F78F /* chatBubblerOut@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F11B92041D3E25B400B8F78F /* chatBubblerOut@3x.png */; };
+		F11B92221D3E25B500B8F78F /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = F11B92051D3E25B400B8F78F /* Contents.json */; };
+		F11B92231D3E25B500B8F78F /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = F11B92071D3E25B400B8F78F /* 1.png */; };
+		F11B92241D3E25B500B8F78F /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = F11B92081D3E25B400B8F78F /* 2.png */; };
+		F11B92251D3E25B500B8F78F /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = F11B92091D3E25B400B8F78F /* 3.png */; };
+		F11B92261D3E25B500B8F78F /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = F11B920A1D3E25B400B8F78F /* Contents.json */; };
+		F11B92271D3E25B500B8F78F /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = F11B920C1D3E25B400B8F78F /* Contents.json */; };
+		F11B92281D3E25B500B8F78F /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F11B920D1D3E25B400B8F78F /* logo.png */; };
+		F11B92291D3E25B500B8F78F /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F11B920E1D3E25B400B8F78F /* logo@2x.png */; };
+		F11B922A1D3E25B500B8F78F /* logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F11B920F1D3E25B400B8F78F /* logo@3x.png */; };
+		F11B922B1D3E25B500B8F78F /* photo1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F11B92101D3E25B400B8F78F /* photo1.jpg */; };
+		F11B922C1D3E25B500B8F78F /* photo2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F11B92111D3E25B400B8F78F /* photo2.jpg */; };
+		F11B922D1D3E25B500B8F78F /* photo3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F11B92121D3E25B400B8F78F /* photo3.jpg */; };
+		F11B922E1D3E25B500B8F78F /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = F11B92141D3E25B400B8F78F /* Contents.json */; };
+		F11B922F1D3E25B500B8F78F /* profileImage.png in Resources */ = {isa = PBXBuildFile; fileRef = F11B92151D3E25B400B8F78F /* profileImage.png */; };
+		F11B92301D3E25B500B8F78F /* profileImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F11B92161D3E25B400B8F78F /* profileImage@2x.png */; };
+		F11B92311D3E25B500B8F78F /* profileImage@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F11B92171D3E25B400B8F78F /* profileImage@3x.png */; };
+		F11B92321D3E25B500B8F78F /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = F11B92191D3E25B400B8F78F /* Contents.json */; };
+		F11B92331D3E25B500B8F78F /* user_menu.png in Resources */ = {isa = PBXBuildFile; fileRef = F11B921A1D3E25B400B8F78F /* user_menu.png */; };
+		F11B92351D3F57CC00B8F78F /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11B92341D3F57CC00B8F78F /* ChatViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F11B91DC1D3E150100B8F78F /* WhoMatters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhoMatters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F11B91DF1D3E150100B8F78F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F11B91E11D3E150100B8F78F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F11B91E41D3E150100B8F78F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F11B91E61D3E150100B8F78F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F11B91E91D3E150100B8F78F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F11B91EB1D3E150100B8F78F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F11B91F11D3E15FB00B8F78F /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		F11B91F31D3E1B6E00B8F78F /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		F11B91F51D3E1CB800B8F78F /* RoomCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomCollectionViewController.swift; sourceTree = "<group>"; };
+		F11B91F71D3E1D0600B8F78F /* CreateRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateRoomViewController.swift; sourceTree = "<group>"; };
+		F11B91F91D3E1D5800B8F78F /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		F11B91FD1D3E25B400B8F78F /* chatBubbler.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chatBubbler.png; sourceTree = "<group>"; };
+		F11B91FE1D3E25B400B8F78F /* chatBubbler@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chatBubbler@2x.png"; sourceTree = "<group>"; };
+		F11B91FF1D3E25B400B8F78F /* chatBubbler@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chatBubbler@3x.png"; sourceTree = "<group>"; };
+		F11B92001D3E25B400B8F78F /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		F11B92021D3E25B400B8F78F /* chatBubblerOut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chatBubblerOut.png; sourceTree = "<group>"; };
+		F11B92031D3E25B400B8F78F /* chatBubblerOut@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chatBubblerOut@2x.png"; sourceTree = "<group>"; };
+		F11B92041D3E25B400B8F78F /* chatBubblerOut@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chatBubblerOut@3x.png"; sourceTree = "<group>"; };
+		F11B92051D3E25B400B8F78F /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		F11B92071D3E25B400B8F78F /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		F11B92081D3E25B400B8F78F /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		F11B92091D3E25B400B8F78F /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		F11B920A1D3E25B400B8F78F /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		F11B920C1D3E25B400B8F78F /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		F11B920D1D3E25B400B8F78F /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		F11B920E1D3E25B400B8F78F /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
+		F11B920F1D3E25B400B8F78F /* logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@3x.png"; sourceTree = "<group>"; };
+		F11B92101D3E25B400B8F78F /* photo1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo1.jpg; sourceTree = "<group>"; };
+		F11B92111D3E25B400B8F78F /* photo2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo2.jpg; sourceTree = "<group>"; };
+		F11B92121D3E25B400B8F78F /* photo3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo3.jpg; sourceTree = "<group>"; };
+		F11B92141D3E25B400B8F78F /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		F11B92151D3E25B400B8F78F /* profileImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profileImage.png; sourceTree = "<group>"; };
+		F11B92161D3E25B400B8F78F /* profileImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profileImage@2x.png"; sourceTree = "<group>"; };
+		F11B92171D3E25B400B8F78F /* profileImage@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profileImage@3x.png"; sourceTree = "<group>"; };
+		F11B92191D3E25B400B8F78F /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		F11B921A1D3E25B400B8F78F /* user_menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_menu.png; sourceTree = "<group>"; };
+		F11B92341D3F57CC00B8F78F /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +115,99 @@
 			isa = PBXGroup;
 			children = (
 				F11B91DF1D3E150100B8F78F /* AppDelegate.swift */,
-				F11B91E11D3E150100B8F78F /* ViewController.swift */,
+				F11B91F11D3E15FB00B8F78F /* LogInViewController.swift */,
+				F11B91F31D3E1B6E00B8F78F /* SignUpViewController.swift */,
+				F11B91F51D3E1CB800B8F78F /* RoomCollectionViewController.swift */,
+				F11B91F71D3E1D0600B8F78F /* CreateRoomViewController.swift */,
+				F11B91F91D3E1D5800B8F78F /* ProfileTableViewController.swift */,
+				F11B92341D3F57CC00B8F78F /* ChatViewController.swift */,
+				F11B91FB1D3E25B400B8F78F /* Resources */,
 				F11B91E31D3E150100B8F78F /* Main.storyboard */,
 				F11B91E61D3E150100B8F78F /* Assets.xcassets */,
 				F11B91E81D3E150100B8F78F /* LaunchScreen.storyboard */,
 				F11B91EB1D3E150100B8F78F /* Info.plist */,
 			);
 			path = WhoMatters;
+			sourceTree = "<group>";
+		};
+		F11B91FB1D3E25B400B8F78F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F11B91FC1D3E25B400B8F78F /* chatBubbler.imageset */,
+				F11B92011D3E25B400B8F78F /* chatBubblerOut.imageset */,
+				F11B92061D3E25B400B8F78F /* dismissButt.imageset */,
+				F11B920B1D3E25B400B8F78F /* logo.imageset */,
+				F11B92101D3E25B400B8F78F /* photo1.jpg */,
+				F11B92111D3E25B400B8F78F /* photo2.jpg */,
+				F11B92121D3E25B400B8F78F /* photo3.jpg */,
+				F11B92131D3E25B400B8F78F /* profileImage.imageset */,
+				F11B92181D3E25B400B8F78F /* user_menu.imageset */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F11B91FC1D3E25B400B8F78F /* chatBubbler.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				F11B91FD1D3E25B400B8F78F /* chatBubbler.png */,
+				F11B91FE1D3E25B400B8F78F /* chatBubbler@2x.png */,
+				F11B91FF1D3E25B400B8F78F /* chatBubbler@3x.png */,
+				F11B92001D3E25B400B8F78F /* Contents.json */,
+			);
+			path = chatBubbler.imageset;
+			sourceTree = "<group>";
+		};
+		F11B92011D3E25B400B8F78F /* chatBubblerOut.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				F11B92021D3E25B400B8F78F /* chatBubblerOut.png */,
+				F11B92031D3E25B400B8F78F /* chatBubblerOut@2x.png */,
+				F11B92041D3E25B400B8F78F /* chatBubblerOut@3x.png */,
+				F11B92051D3E25B400B8F78F /* Contents.json */,
+			);
+			path = chatBubblerOut.imageset;
+			sourceTree = "<group>";
+		};
+		F11B92061D3E25B400B8F78F /* dismissButt.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				F11B92071D3E25B400B8F78F /* 1.png */,
+				F11B92081D3E25B400B8F78F /* 2.png */,
+				F11B92091D3E25B400B8F78F /* 3.png */,
+				F11B920A1D3E25B400B8F78F /* Contents.json */,
+			);
+			path = dismissButt.imageset;
+			sourceTree = "<group>";
+		};
+		F11B920B1D3E25B400B8F78F /* logo.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				F11B920C1D3E25B400B8F78F /* Contents.json */,
+				F11B920D1D3E25B400B8F78F /* logo.png */,
+				F11B920E1D3E25B400B8F78F /* logo@2x.png */,
+				F11B920F1D3E25B400B8F78F /* logo@3x.png */,
+			);
+			path = logo.imageset;
+			sourceTree = "<group>";
+		};
+		F11B92131D3E25B400B8F78F /* profileImage.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				F11B92141D3E25B400B8F78F /* Contents.json */,
+				F11B92151D3E25B400B8F78F /* profileImage.png */,
+				F11B92161D3E25B400B8F78F /* profileImage@2x.png */,
+				F11B92171D3E25B400B8F78F /* profileImage@3x.png */,
+			);
+			path = profileImage.imageset;
+			sourceTree = "<group>";
+		};
+		F11B92181D3E25B400B8F78F /* user_menu.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				F11B92191D3E25B400B8F78F /* Contents.json */,
+				F11B921A1D3E25B400B8F78F /* user_menu.png */,
+			);
+			path = user_menu.imageset;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +268,34 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F11B922B1D3E25B500B8F78F /* photo1.jpg in Resources */,
+				F11B92241D3E25B500B8F78F /* 2.png in Resources */,
+				F11B921D1D3E25B500B8F78F /* chatBubbler@3x.png in Resources */,
+				F11B92211D3E25B500B8F78F /* chatBubblerOut@3x.png in Resources */,
+				F11B92271D3E25B500B8F78F /* Contents.json in Resources */,
+				F11B921B1D3E25B500B8F78F /* chatBubbler.png in Resources */,
+				F11B92281D3E25B500B8F78F /* logo.png in Resources */,
+				F11B92331D3E25B500B8F78F /* user_menu.png in Resources */,
+				F11B921C1D3E25B500B8F78F /* chatBubbler@2x.png in Resources */,
+				F11B922A1D3E25B500B8F78F /* logo@3x.png in Resources */,
+				F11B92291D3E25B500B8F78F /* logo@2x.png in Resources */,
+				F11B92261D3E25B500B8F78F /* Contents.json in Resources */,
+				F11B92251D3E25B500B8F78F /* 3.png in Resources */,
+				F11B92201D3E25B500B8F78F /* chatBubblerOut@2x.png in Resources */,
+				F11B921F1D3E25B500B8F78F /* chatBubblerOut.png in Resources */,
+				F11B92301D3E25B500B8F78F /* profileImage@2x.png in Resources */,
 				F11B91EA1D3E150100B8F78F /* LaunchScreen.storyboard in Resources */,
 				F11B91E71D3E150100B8F78F /* Assets.xcassets in Resources */,
+				F11B922D1D3E25B500B8F78F /* photo3.jpg in Resources */,
+				F11B922E1D3E25B500B8F78F /* Contents.json in Resources */,
+				F11B922C1D3E25B500B8F78F /* photo2.jpg in Resources */,
+				F11B92321D3E25B500B8F78F /* Contents.json in Resources */,
 				F11B91E51D3E150100B8F78F /* Main.storyboard in Resources */,
+				F11B92311D3E25B500B8F78F /* profileImage@3x.png in Resources */,
+				F11B92231D3E25B500B8F78F /* 1.png in Resources */,
+				F11B92221D3E25B500B8F78F /* Contents.json in Resources */,
+				F11B921E1D3E25B500B8F78F /* Contents.json in Resources */,
+				F11B922F1D3E25B500B8F78F /* profileImage.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +306,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F11B91E21D3E150100B8F78F /* ViewController.swift in Sources */,
+				F11B91FA1D3E1D5800B8F78F /* ProfileTableViewController.swift in Sources */,
+				F11B91F41D3E1B6E00B8F78F /* SignUpViewController.swift in Sources */,
+				F11B91F61D3E1CB800B8F78F /* RoomCollectionViewController.swift in Sources */,
+				F11B92351D3F57CC00B8F78F /* ChatViewController.swift in Sources */,
+				F11B91F21D3E15FB00B8F78F /* LogInViewController.swift in Sources */,
 				F11B91E01D3E150100B8F78F /* AppDelegate.swift in Sources */,
+				F11B91F81D3E1D0600B8F78F /* CreateRoomViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
