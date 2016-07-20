@@ -16,6 +16,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let navigationBarAppearance = UINavigationBar.appearance()
+        navigationBarAppearance.barTintColor = .blackColor()
+        navigationBarAppearance.tintColor = .whiteColor()
+        
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
+        
+        // change navigation title font and color; the following code doesn't work for me.
+//        let font = UIFont(name: "OpenSans", size: 18)
+//        if let font = font {
+//            navigationBarAppearance.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor(), NSFontAttributeName: font]
+//        }
+        //change navigation title color
+        navigationBarAppearance.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+    
         return true
     }
 
