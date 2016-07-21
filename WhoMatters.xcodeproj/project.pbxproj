@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		192A1DB2672D867A2A07527C /* Pods_WhoMatters.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D38E8A07CF7D7C414B77C88C /* Pods_WhoMatters.framework */; };
 		F11B91E01D3E150100B8F78F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11B91DF1D3E150100B8F78F /* AppDelegate.swift */; };
 		F11B91E51D3E150100B8F78F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F11B91E31D3E150100B8F78F /* Main.storyboard */; };
 		F11B91E71D3E150100B8F78F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F11B91E61D3E150100B8F78F /* Assets.xcassets */; };
@@ -42,9 +43,12 @@
 		F11B92321D3E25B500B8F78F /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = F11B92191D3E25B400B8F78F /* Contents.json */; };
 		F11B92331D3E25B500B8F78F /* user_menu.png in Resources */ = {isa = PBXBuildFile; fileRef = F11B921A1D3E25B400B8F78F /* user_menu.png */; };
 		F11B92351D3F57CC00B8F78F /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11B92341D3F57CC00B8F78F /* ChatViewController.swift */; };
+		F1E052341D40874100062EC1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1E052331D40874100062EC1 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		62A6758A1534D6A7942D8A56 /* Pods-WhoMatters.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhoMatters.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhoMatters/Pods-WhoMatters.release.xcconfig"; sourceTree = "<group>"; };
+		D38E8A07CF7D7C414B77C88C /* Pods_WhoMatters.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhoMatters.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F11B91DC1D3E150100B8F78F /* WhoMatters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhoMatters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F11B91DF1D3E150100B8F78F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F11B91E41D3E150100B8F78F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -82,6 +86,8 @@
 		F11B92191D3E25B400B8F78F /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
 		F11B921A1D3E25B400B8F78F /* user_menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_menu.png; sourceTree = "<group>"; };
 		F11B92341D3F57CC00B8F78F /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		F1E052331D40874100062EC1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F58212773772DAB86BCBD5FD /* Pods-WhoMatters.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhoMatters.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhoMatters/Pods-WhoMatters.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,17 +95,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				192A1DB2672D867A2A07527C /* Pods_WhoMatters.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02100B318FC26E6039754D72 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F58212773772DAB86BCBD5FD /* Pods-WhoMatters.debug.xcconfig */,
+				62A6758A1534D6A7942D8A56 /* Pods-WhoMatters.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8F7FEC4D07C7114F21C63F8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D38E8A07CF7D7C414B77C88C /* Pods_WhoMatters.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F11B91D31D3E150100B8F78F = {
 			isa = PBXGroup;
 			children = (
 				F11B91DE1D3E150100B8F78F /* WhoMatters */,
 				F11B91DD1D3E150100B8F78F /* Products */,
+				02100B318FC26E6039754D72 /* Pods */,
+				8F7FEC4D07C7114F21C63F8C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,17 +141,13 @@
 			isa = PBXGroup;
 			children = (
 				F11B91DF1D3E150100B8F78F /* AppDelegate.swift */,
-				F11B91F11D3E15FB00B8F78F /* LogInViewController.swift */,
-				F11B91F31D3E1B6E00B8F78F /* SignUpViewController.swift */,
-				F11B91F51D3E1CB800B8F78F /* RoomCollectionViewController.swift */,
-				F11B91F71D3E1D0600B8F78F /* CreateRoomViewController.swift */,
-				F11B91F91D3E1D5800B8F78F /* ProfileTableViewController.swift */,
-				F11B92341D3F57CC00B8F78F /* ChatViewController.swift */,
+				F1E052321D407BD100062EC1 /* ViewControllers */,
 				F11B91FB1D3E25B400B8F78F /* Resources */,
 				F11B91E31D3E150100B8F78F /* Main.storyboard */,
 				F11B91E61D3E150100B8F78F /* Assets.xcassets */,
 				F11B91E81D3E150100B8F78F /* LaunchScreen.storyboard */,
 				F11B91EB1D3E150100B8F78F /* Info.plist */,
+				F1E052331D40874100062EC1 /* GoogleService-Info.plist */,
 			);
 			path = WhoMatters;
 			sourceTree = "<group>";
@@ -210,6 +232,35 @@
 			path = user_menu.imageset;
 			sourceTree = "<group>";
 		};
+		F1E052301D407B9800062EC1 /* LogIn, SignUp VC */ = {
+			isa = PBXGroup;
+			children = (
+				F11B91F11D3E15FB00B8F78F /* LogInViewController.swift */,
+				F11B91F31D3E1B6E00B8F78F /* SignUpViewController.swift */,
+			);
+			name = "LogIn, SignUp VC";
+			sourceTree = "<group>";
+		};
+		F1E052311D407BB700062EC1 /* Room VC */ = {
+			isa = PBXGroup;
+			children = (
+				F11B91F51D3E1CB800B8F78F /* RoomCollectionViewController.swift */,
+				F11B91F71D3E1D0600B8F78F /* CreateRoomViewController.swift */,
+			);
+			name = "Room VC";
+			sourceTree = "<group>";
+		};
+		F1E052321D407BD100062EC1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F1E052301D407B9800062EC1 /* LogIn, SignUp VC */,
+				F1E052311D407BB700062EC1 /* Room VC */,
+				F11B91F91D3E1D5800B8F78F /* ProfileTableViewController.swift */,
+				F11B92341D3F57CC00B8F78F /* ChatViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -217,9 +268,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F11B91EE1D3E150100B8F78F /* Build configuration list for PBXNativeTarget "WhoMatters" */;
 			buildPhases = (
+				4CDE184CA90E0D2B964FD7B8 /* [CP] Check Pods Manifest.lock */,
 				F11B91D81D3E150100B8F78F /* Sources */,
 				F11B91D91D3E150100B8F78F /* Frameworks */,
 				F11B91DA1D3E150100B8F78F /* Resources */,
+				628849BC9FAF5F327BBE2307 /* [CP] Embed Pods Frameworks */,
+				BE262667AF801D1BCDC6C1C5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -272,6 +326,7 @@
 				F11B92241D3E25B500B8F78F /* 2.png in Resources */,
 				F11B921D1D3E25B500B8F78F /* chatBubbler@3x.png in Resources */,
 				F11B92211D3E25B500B8F78F /* chatBubblerOut@3x.png in Resources */,
+				F1E052341D40874100062EC1 /* GoogleService-Info.plist in Resources */,
 				F11B92271D3E25B500B8F78F /* Contents.json in Resources */,
 				F11B921B1D3E25B500B8F78F /* chatBubbler.png in Resources */,
 				F11B92281D3E25B500B8F78F /* logo.png in Resources */,
@@ -300,6 +355,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4CDE184CA90E0D2B964FD7B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		628849BC9FAF5F327BBE2307 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhoMatters/Pods-WhoMatters-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE262667AF801D1BCDC6C1C5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhoMatters/Pods-WhoMatters-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F11B91D81D3E150100B8F78F /* Sources */ = {
@@ -423,6 +526,7 @@
 		};
 		F11B91EF1D3E150100B8F78F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F58212773772DAB86BCBD5FD /* Pods-WhoMatters.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WhoMatters/Info.plist;
@@ -434,6 +538,7 @@
 		};
 		F11B91F01D3E150100B8F78F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62A6758A1534D6A7942D8A56 /* Pods-WhoMatters.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WhoMatters/Info.plist;
@@ -462,6 +567,7 @@
 				F11B91F01D3E150100B8F78F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
