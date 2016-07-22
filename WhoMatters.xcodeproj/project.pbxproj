@@ -44,6 +44,9 @@
 		F11B92331D3E25B500B8F78F /* user_menu.png in Resources */ = {isa = PBXBuildFile; fileRef = F11B921A1D3E25B400B8F78F /* user_menu.png */; };
 		F11B92351D3F57CC00B8F78F /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11B92341D3F57CC00B8F78F /* ChatViewController.swift */; };
 		F1E052341D40874100062EC1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1E052331D40874100062EC1 /* GoogleService-Info.plist */; };
+		F1E052361D40B65500062EC1 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E052351D40B65500062EC1 /* DataService.swift */; };
+		F1E0523B1D413A3400062EC1 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F1E052381D413A3400062EC1 /* ProgressHUD.bundle */; };
+		F1E0523C1D413A3400062EC1 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E0523A1D413A3400062EC1 /* ProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +90,11 @@
 		F11B921A1D3E25B400B8F78F /* user_menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_menu.png; sourceTree = "<group>"; };
 		F11B92341D3F57CC00B8F78F /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		F1E052331D40874100062EC1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F1E052351D40B65500062EC1 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		F1E052371D413A3100062EC1 /* WhoMatters-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WhoMatters-Bridging-Header.h"; sourceTree = "<group>"; };
+		F1E052381D413A3400062EC1 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
+		F1E052391D413A3400062EC1 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
+		F1E0523A1D413A3400062EC1 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
 		F58212773772DAB86BCBD5FD /* Pods-WhoMatters.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhoMatters.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhoMatters/Pods-WhoMatters.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				F11B91DF1D3E150100B8F78F /* AppDelegate.swift */,
+				F1E052351D40B65500062EC1 /* DataService.swift */,
 				F1E052321D407BD100062EC1 /* ViewControllers */,
 				F11B91FB1D3E25B400B8F78F /* Resources */,
 				F11B91E31D3E150100B8F78F /* Main.storyboard */,
@@ -148,6 +157,10 @@
 				F11B91E81D3E150100B8F78F /* LaunchScreen.storyboard */,
 				F11B91EB1D3E150100B8F78F /* Info.plist */,
 				F1E052331D40874100062EC1 /* GoogleService-Info.plist */,
+				F1E052381D413A3400062EC1 /* ProgressHUD.bundle */,
+				F1E052391D413A3400062EC1 /* ProgressHUD.h */,
+				F1E0523A1D413A3400062EC1 /* ProgressHUD.m */,
+				F1E052371D413A3100062EC1 /* WhoMatters-Bridging-Header.h */,
 			);
 			path = WhoMatters;
 			sourceTree = "<group>";
@@ -330,6 +343,7 @@
 				F11B92271D3E25B500B8F78F /* Contents.json in Resources */,
 				F11B921B1D3E25B500B8F78F /* chatBubbler.png in Resources */,
 				F11B92281D3E25B500B8F78F /* logo.png in Resources */,
+				F1E0523B1D413A3400062EC1 /* ProgressHUD.bundle in Resources */,
 				F11B92331D3E25B500B8F78F /* user_menu.png in Resources */,
 				F11B921C1D3E25B500B8F78F /* chatBubbler@2x.png in Resources */,
 				F11B922A1D3E25B500B8F78F /* logo@3x.png in Resources */,
@@ -409,6 +423,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1E0523C1D413A3400062EC1 /* ProgressHUD.m in Sources */,
 				F11B91FA1D3E1D5800B8F78F /* ProfileTableViewController.swift in Sources */,
 				F11B91F41D3E1B6E00B8F78F /* SignUpViewController.swift in Sources */,
 				F11B91F61D3E1CB800B8F78F /* RoomCollectionViewController.swift in Sources */,
@@ -416,6 +431,7 @@
 				F11B91F21D3E15FB00B8F78F /* LogInViewController.swift in Sources */,
 				F11B91E01D3E150100B8F78F /* AppDelegate.swift in Sources */,
 				F11B91F81D3E1D0600B8F78F /* CreateRoomViewController.swift in Sources */,
+				F1E052361D40B65500062EC1 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,10 +545,13 @@
 			baseConfigurationReference = F58212773772DAB86BCBD5FD /* Pods-WhoMatters.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = WhoMatters/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.owzhiyin.WhoMatters;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WhoMatters/WhoMatters-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -541,10 +560,12 @@
 			baseConfigurationReference = 62A6758A1534D6A7942D8A56 /* Pods-WhoMatters.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = WhoMatters/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.owzhiyin.WhoMatters;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WhoMatters/WhoMatters-Bridging-Header.h";
 			};
 			name = Release;
 		};

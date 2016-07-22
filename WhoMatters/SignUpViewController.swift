@@ -16,6 +16,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     
     let imagePicker = UIImagePickerController()
+    var selectedPhoto: UIImage!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +24,9 @@ class SignUpViewController: UIViewController {
         let tap = UITapGestureRecognizer(target: self, action: #selector(SignUpViewController.selectPhoto(_:)))
         tap.numberOfTapsRequired = 1
         profileImage.addGestureRecognizer(tap)
+        
+        profileImage.layer.cornerRadius = profileImage.frame.size.height / 2
+        profileImage.clipsToBounds = true
     }
     
     func selectPhoto(tap: UITapGestureRecognizer){
@@ -43,13 +47,50 @@ class SignUpViewController: UIViewController {
     }
 
     @IBAction func SignUpDidTapped(sender: AnyObject) {
+        guard let email = emailTextField.text where !email.isEmpty,
+                let password = passwordTextField.text where !password.isEmpty,
+            let username = usernameTextField.text where !username.isEmpty else {
+                return
+        }
+        
+        var data = NSData()
+        data = UIImageJPEGRepresentation(profileImage.image!, 0.1)!
+        // Signing Up
+        ProgressHUD.show("Please wait...", interaction: false)
+        DataService.dataService.SignUp(username, email: email, password: password, data: data)
+        
     }
-
+    
 
 }
 
 
 extension SignUpViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    // ImagePicker Delegate
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        selectedPhoto = info[UIImagePickerControllerEditedImage] as? UIImage
+        self.profileImage.image = selectedPhoto
+        picker.dismissViewControllerAnimated(true, completion: nil)
+    }
     
-    
+    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
